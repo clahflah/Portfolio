@@ -1,4 +1,5 @@
 import React from "react";
+import prof_pic from '../assets/prof_pic.jpg'
 
 const Banner = props => {
   return (
