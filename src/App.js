@@ -1,8 +1,13 @@
+import React from "react";
 import Banner from "./components/Banner";
+import Projects from "./layout/Projects";
 
 function App() {
   return (
-    <Banner />
+    <React.Fragment>
+      <Banner />
+      <Projects />
+    </React.Fragment>
   );
 }
 
