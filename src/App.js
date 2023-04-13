@@ -6,7 +6,7 @@ function App() {
   return (
     <React.Fragment>
       <Banner />
-      <Projects />
+      <Projects onClick='test'/>
     </React.Fragment>
   );
 }
