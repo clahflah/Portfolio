@@ -11,11 +11,7 @@ const Banner = (props) => {
       <h1>Clay Flaherty</h1>
       <h2>Full Stack Developer</h2>
         <p>
-          I am a well versed developer in the use of Ruby on Rails, Javascript,
-          React, Relational Databases, Stimulus, SQL, PostgresSQL, HTML, CSS, and
-          many other vital programming skills. I have worked on projects with
-          intricate database schema and complex features such as instant messaging
-          using action cable and API calls.
+        Crafting digital experiences through innovative web development solutions
         </p>
       </div>
       <Avatar

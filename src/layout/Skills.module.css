@@ -1,0 +1,8 @@
+.skillsIcon{
+  height: 80px;
+}
+
+.skillsIconContainer{
+  display: flex;
+  justify-content: space-evenly;
+}

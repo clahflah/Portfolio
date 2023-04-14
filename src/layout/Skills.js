@@ -4,14 +4,31 @@ import ruby from "../assets/ruby.png";
 import react from "../assets/physics.png";
 import sql from "../assets/sql-server.png";
 import git from "../assets/merge.png";
-import javascript from "../assets/javascript.png"
-import html from "../assets/html-5.png"
-import heroku from '../assets/heroku.png';
-import github from '../assets/github.png';
-import figma from '../assets/figma.png';
-import css from '../assets/css-3.png'
+import javascript from "../assets/javascript.png";
+import html from "../assets/html-5.png";
+import heroku from "../assets/heroku.png";
+import github from "../assets/github.png";
+import figma from "../assets/figma.png";
+import css from "../assets/css-3.png";
 
 const Skills = (props) => {
+  const icons = [
+    ruby,
+    javascript,
+    react,
+    sql,
+    git,
+    github,
+    heroku,
+    figma,
+    html,
+    css,
+  ];
+
+  const iconTags = icons.map((icon) => (
+    <img src={icon} alt={icon} className={classes.skillsIcon}></img>
+  ));
+
   const attributes = [
     <a href="https://www.flaticon.com/free-icons/ruby" title="ruby icons">
       Ruby icons created by Freepik - Flaticon
@@ -69,7 +86,14 @@ const Skills = (props) => {
     <React.Fragment>
       <h2>Skills</h2>
       <p>Tech Stack: </p>
-      <img src={ruby} alt='ruby icon'></img>
+      <div className={classes.skillsIconContainer}>{iconTags}</div>
+      <p>
+        I am a well versed developer in the use of Ruby on Rails, Javascript,
+        React, Relational Databases, Stimulus, SQL, PostgresSQL, HTML, CSS, and
+        many other vital programming skills. I have worked on projects with
+        intricate database schema and complex features such as instant messaging
+        using action cable and API calls.
+      </p>
     </React.Fragment>
   );
 };
