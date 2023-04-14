@@ -13,20 +13,23 @@ import css from "../assets/css-3.png";
 
 const Skills = (props) => {
   const icons = [
-    ruby,
-    javascript,
-    react,
-    sql,
-    git,
-    github,
-    heroku,
-    figma,
-    html,
-    css,
+    [ruby, 'Ruby'],
+    [javascript, 'Javascript'],
+    [react, 'React'],
+    [sql, 'Sql'],
+    [git, 'Git'],
+    [github, 'Github'],
+    [heroku, 'Heroku'],
+    [figma, 'Figma'],
+    [html, 'HTML-5'],
+    [css, 'CSS'],
   ];
 
   const iconTags = icons.map((icon) => (
-    <img src={icon} alt={icon} className={classes.skillsIcon}></img>
+    <div className={classes.iconMiniContainer}>
+      <img src={icon[0]} alt={icon[1]} className={classes.skillsIcon}></img>
+      <p>{icon[1]}</p>
+    </div>
   ));
 
   const attributes = [
