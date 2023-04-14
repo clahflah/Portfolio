@@ -1,0 +1,11 @@
+.projectImg {
+  display: block;
+  object-fit: fill;
+  width: 350px;
+  margin: 20px auto;
+}
+
+.projectCard {
+  width: 400px;
+  border: 5px solid red;
+}
