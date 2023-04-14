@@ -1,0 +1,12 @@
+.contacttitle{
+  text-align: right;
+}
+
+.contactIcon{
+  height: 170px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+}

@@ -10,19 +10,21 @@ import heroku from "../assets/heroku.png";
 import github from "../assets/github.png";
 import figma from "../assets/figma.png";
 import css from "../assets/css-3.png";
+import python from "../assets/piton.png";
 
 const Skills = (props) => {
   const icons = [
-    [ruby, 'Ruby'],
-    [javascript, 'Javascript'],
-    [react, 'React'],
-    [sql, 'Sql'],
-    [git, 'Git'],
-    [github, 'Github'],
-    [heroku, 'Heroku'],
-    [figma, 'Figma'],
-    [html, 'HTML-5'],
-    [css, 'CSS'],
+    [ruby, "Ruby"],
+    [python, "Python"],
+    [javascript, "Javascript"],
+    [react, "React"],
+    [sql, "Sql"],
+    [git, "Git"],
+    [github, "Github"],
+    [heroku, "Heroku"],
+    [figma, "Figma"],
+    [html, "HTML-5"],
+    [css, "CSS"],
   ];
 
   const iconTags = icons.map((icon) => (
@@ -83,6 +85,18 @@ const Skills = (props) => {
     </a>,
     <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>,
     <a href="https://iconscout.com">IconScout</a>,
+    <a href="https://www.flaticon.es/iconos-gratis/piton" title="pitón iconos">
+      Pitón iconos creados por Freepik - Flaticon
+    </a>,
+    <a
+      href="https://www.flaticon.com/free-icons/linkedin"
+      title="linkedin icons"
+    >
+      Linkedin icons created by Freepik - Flaticon
+    </a>,
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+      Email icons created by Uniconlabs - Flaticon
+    </a>,
   ];
 
   return (
