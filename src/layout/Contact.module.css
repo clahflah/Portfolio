@@ -10,3 +10,23 @@
   display: flex;
   justify-content: space-around;
 }
+
+.iconShake:hover {
+  animation: tilt 0.5s linear infinite;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
