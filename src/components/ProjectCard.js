@@ -12,11 +12,13 @@ const ProjectCard = (props) => {
     setInfoShown(false)
   }
   return (
-    <div className={classes.projectCard} onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
+    <React.Fragment>
+    <div className={infoShown? classes.hoverProjectCard : classes.projectCard} onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler} >
       <img src={props.src} alt={props.alt} className={classes.projectImg}></img>
       <h3>{props.title}</h3>
       {infoShown && <p>{props.description}</p>}
     </div>
+    </React.Fragment>
   );
 };
 
