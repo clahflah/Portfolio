@@ -4,11 +4,24 @@
   justify-content: center;
   align-items: center;
   width: 40%;
+  margin: 100px
 }
 
 .bannercontainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  position: relative;
+  height: 75vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.imgContainer {
+  position: absolute;
+  top: -475px;
+  right: 500px;
+  z-index: -1;
+  width: 150px;
 }
