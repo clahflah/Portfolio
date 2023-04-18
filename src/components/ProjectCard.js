@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
     <div className={classes.projectCard} onMouseEnter={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler} style={{ maxHeight }}>
       <img src={props.src} alt={props.alt} className={classes.projectImg}></img>
       <h3>{props.title}</h3>
-      <p classes={classes.description} style={{opacity: infoShown? 1 : 0, transition:"opacity .5s ease"}}>{props.description}</p>
+      <p classes={classes.description} style={{opacity: infoShown? 1 : 0, transition:"opacity .3s ease"}}>{props.description}</p>
     </div>
     </React.Fragment>
   );

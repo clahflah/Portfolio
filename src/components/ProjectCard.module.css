@@ -9,7 +9,7 @@
   width: 400px;
   border: 5px solid red;
   /* height: 453px */
-  transition: transform .5s ease, max-height .5s ease;
+  transition: transform .4s ease, max-height .4s ease;
 }
 
 .card:hover {
