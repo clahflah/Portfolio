@@ -9,9 +9,9 @@ const Contact = props => {
     <React.Fragment>
       <h2 className={classes.contacttitle}>Contact</h2>
       <div className={classes.contactContainer}>
-        <a href="https://github.com/clahflah" target='blank'><img className={classes.contactIcon} src={github} alt="Github Icon"></img></a>
-        <a href="https://www.linkedin.com/in/clayton-flaherty/" target='blank'><img className={classes.contactIcon} src={linkedin} alt="Linked In Icon"></img></a>
-        <a href="" target='blank'><img className={classes.contactIcon} src={email} alt="Link to Email"></img></a>
+        <a href="https://github.com/clahflah" target='blank'><img className={`${classes.contactIcon} ${classes.iconShake}`} src={github} alt="Github Icon"></img></a>
+        <a href="https://www.linkedin.com/in/clayton-flaherty/" target='blank'><img className={`${classes.contactIcon} ${classes.iconShake}`} src={linkedin} alt="Linked In Icon"></img></a>
+        <a href="" target='blank'><img className={`${classes.contactIcon} ${classes.iconShake}`} src={email} alt="Link to Email"></img></a>
       </div>
     </React.Fragment>
   )
