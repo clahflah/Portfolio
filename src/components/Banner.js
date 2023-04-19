@@ -10,7 +10,7 @@ const Banner = (props) => {
     <div className={classes.bannercontainer}>
       <div className={classes.bannertextcontainer}>
       <h1>Clay Flaherty</h1>
-      <h2>Full Stack Developer</h2>
+      <h2 className={classes.bannertitle}>Full Stack Developer</h2>
         <p>
         Crafting digital experiences through innovative web development solutions
         </p>

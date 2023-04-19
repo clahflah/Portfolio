@@ -1,14 +1,41 @@
+.contactcontainer{
+  margin-top: 200px;
+  height: 70vh;
+  position: relative;
+}
+
 .contacttitle{
+  font-size: 6rem;
   text-align: right;
+  margin: 75px 350px -200px 0;
 }
 
 .contactIcon{
   height: 170px;
 }
 
-.contactContainer {
+.contactIconContainer {
   display: flex;
   justify-content: space-around;
+}
+
+.email {
+  position:absolute;
+  top: -100px;
+  left: 400px;
+}
+
+.linkedin {
+  position:absolute;
+  top: 150px;
+  left: 600px;
+}
+
+.git {
+  position:absolute;
+  bottom: 250px;
+  right: 450px;
+
 }
 
 .iconShake:hover {
