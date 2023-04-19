@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import prof_pic from "../assets/prof_pic.jpg";
 import classes from "./Projects.module.css";
 
-const Projects = (props) => {
+const Projects = ({ index }) => {
   const projects = [
     {
       title: "Project 1",
@@ -27,13 +27,46 @@ const Projects = (props) => {
         "A very lovely Third project with intense and complicated features. Please visit the site.",
     },
   ];
+
+  let marginTop = "0px";
+
+  if (index === 0) {
+    marginTop = "10px";
+  } else if (index === 1) {
+    marginTop = "30px";
+  } else if (index === 2) {
+    marginTop = "60px";
+  }
+
   return (
-    <React.Fragment>
+    <div className={classes.projectsContainer}>
       <h2 className={classes.projectstitle}>Latest Projects</h2>
-      <div className={classes.projectcard}>
-        {projects.map(project => <ProjectCard title={project.title} alt={project.alt} src={project.src} description={project.description} />)}
+      <div className={classes.projectcardcontainer}>
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className={classes.projectcardmapped}
+            style={{
+              marginTop:
+                index === 0
+                  ? "20px"
+                  : index === 1
+                  ? "100px"
+                  : index === 2
+                  ? "160px"
+                  : "260px",
+            }}
+          >
+            <ProjectCard
+              title={project.title}
+              alt={project.alt}
+              src={project.src}
+              description={project.description}
+            />
+          </div>
+        ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

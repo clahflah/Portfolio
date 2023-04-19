@@ -1,8 +1,20 @@
-.projectcard {
+.projectscontainer {
+  position: absolute;
+}
+
+.projectcardcontainer {
   display: flex;
   justify-content: space-around;
 }
 
 .projectstitle{
   text-align: right;
+  margin: 30px 100px 30px 30px;
+  position: relative;
+  top: 100px;
+  right: 30px;
+}
+
+.projectcardmapped{
+
 }

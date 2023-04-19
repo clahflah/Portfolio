@@ -1,6 +1,15 @@
 .avatar {
   border-radius: 50%;
+  height: 430px;
+  position: absolute;
+  top: 39%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
+
+
+
 
 .avatar-small {
   height: 10px
