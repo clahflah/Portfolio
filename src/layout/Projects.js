@@ -51,10 +51,10 @@ const Projects = ({ index }) => {
                 index === 0
                   ? "20px"
                   : index === 1
-                  ? "60px"
-                  : index === 2
                   ? "100px"
-                  : "110px",
+                  : index === 2
+                  ? "160px"
+                  : "260px",
             }}
           >
             <ProjectCard
