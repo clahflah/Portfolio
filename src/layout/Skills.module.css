@@ -1,14 +1,33 @@
+.skillsContainer{
+  display: flex;
+
+}
+
+.skillsTitle{
+  margin-right: 115px;
+}
+
 .skillsIcon{
   height: 80px;
 }
 
-.skillsIconContainer{
+.techStackContainer{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+
 }
 
 .iconMiniContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.bio {
+  width: 40vw;
+}
+
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
 }

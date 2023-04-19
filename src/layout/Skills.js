@@ -101,16 +101,20 @@ const Skills = (props) => {
 
   return (
     <React.Fragment>
-      <h2>Skills</h2>
-      <p>Tech Stack: </p>
-      <div className={classes.skillsIconContainer}>{iconTags}</div>
-      <p>
-        I am a well versed developer in the use of Ruby on Rails, Javascript,
-        React, Relational Databases, Stimulus, SQL, PostgresSQL, HTML, CSS, and
-        many other vital programming skills. I have worked on projects with
-        intricate database schema and complex features such as instant messaging
-        using action cable and API calls.
-      </p>
+      <h2 className={classes.skillsTitle}>Skills</h2>
+      <div className={classes.skillsContainer}>
+        <p className={classes.bio}>
+          I am a well versed developer in the use of Ruby on Rails, Javascript,
+          React, Relational Databases, Stimulus, SQL, PostgresSQL, HTML, CSS,
+          and many other vital programming skills. I have worked on projects
+          with intricate database schema and complex features such as instant
+          messaging using action cable and API calls.
+        </p>
+        <div className={classes.techStackContainer}>
+          <p>Tech Stack: </p>
+          <div className={classes.iconContainer}>{iconTags}</div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };
