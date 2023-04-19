@@ -3,10 +3,10 @@ import classes from "./ProjectCard.module.css";
 
 const ProjectCard = (props) => {
   const [infoShown, setInfoShown] = useState(false)
-  const [maxHeight, setMaxHeight] = useState('465px')
+  const [maxHeight, setMaxHeight] = useState('475px')
 
   useEffect(() => {
-    setMaxHeight(infoShown? `${props.description.length * 20}px` : '465px');
+    setMaxHeight(infoShown? `${props.description.length * 20}px` : '475px');
   }, [infoShown, props.description]);
 
   const onMouseEnterHandler = () =>{

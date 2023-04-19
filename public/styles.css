@@ -9,7 +9,8 @@ h3{
   font-family: "IBM Plex Mono";
   font-weight: 400;
   font-weight: bold;
-  font-size: 2rem
+  font-size: 2rem;
+  text-align: center;
 }
 h2{
   font-family: "IBM Plex Mono";
