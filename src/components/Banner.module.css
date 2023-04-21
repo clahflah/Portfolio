@@ -13,7 +13,7 @@
   width: 100%;
   /* justify-content: space-evenly; */
   position: relative;
-  height: 75vh;
+  height: 80vh;
   overflow-x: hidden;
   position: relative;
 }
@@ -27,4 +27,14 @@
 }
 .bannertitle {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.h2icon{
+  display: flex;
+}
+
+.bannerIcon {
+  font-size: 5rem;
+  color: red;
 }

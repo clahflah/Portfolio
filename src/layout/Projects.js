@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useRef} from "react";
 import ProjectCard from "../components/ProjectCard";
 import prof_pic from "../assets/prof_pic.jpg";
 import classes from "./Projects.module.css";
 
 const Projects = ({ index }) => {
+  const projectRef = useRef(null)
+
   const projects = [
     {
       title: "Project 1",
@@ -39,7 +41,7 @@ const Projects = ({ index }) => {
   }
 
   return (
-    <div className={classes.projectsContainer}>
+    <div className={classes.projectsContainer} ref={projectRef}>
       <h2 className={classes.projectstitle}>Latest Projects</h2>
       <div className={classes.projectcardcontainer}>
         {projects.map((project, index) => (
