@@ -5,18 +5,17 @@ import classes from "./Banner.module.css";
 import "./Banner.module.css";
 import Bannerimg from "../assets/BannerImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Projects from "../layout/Projects";
+import projects from "../layout/Projects";
 
-const Banner = (props) => {
-
-  const projects = Projects.projectRef
-
+const Banner = ({projectRef}) => {
   const scroll = () => {
-    projects.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
+    if (projectRef.current) {
+      projectRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <div className={classes.bannercontainer}>

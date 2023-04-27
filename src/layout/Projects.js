@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import prof_pic from "../assets/prof_pic.jpg";
 import classes from "./Projects.module.css";
 
-const Projects = ({ index }) => {
+const Projects = (props, { index }) => {
   const projectRef = useRef(null)
 
   const projects = [
@@ -41,7 +41,7 @@ const Projects = ({ index }) => {
   }
 
   return (
-    <div className={classes.projectsContainer} ref={projectRef}>
+    <div className={classes.projectsContainer} ref={props.projectRef}>
       <h2 className={classes.projectstitle}>Latest Projects</h2>
       <div className={classes.projectcardcontainer}>
         {projects.map((project, index) => (
